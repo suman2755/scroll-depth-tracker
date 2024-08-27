@@ -48,4 +48,5 @@ const scrollDepthTracker = new ScrollDepthTracker(articleElement, [25, 50, 100])
 // Example listener to handle the scroll depth event
 window.addEventListener('scrollDepthReached', (e) => {
     console.log(`You have reached ${e.detail.percentage}% of the article.`);
+    alert(`You have reached ${e.detail.percentage}% of the article.`);
 });
